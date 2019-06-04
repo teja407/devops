@@ -1,0 +1,193 @@
+linux directory structure:
+
+/ --- ROOT Directory
+
+boot/ --> having all booting files
+etc/  --> all the configuration files
+bin/  --> all the executable files like ls,touch,cat etc
+var/  --> variable data --> mostly consists of logs
+tmp/  --> temporary files
+home/ --> ur workspace
+
+cd /home/linux --> cd for change directory
+
+ssh -i devops.pem -l ec2-user IP address
+
+pwd --present working directory
+
+cd / -->rootdirectory -->how to verify by using pwd.
+
+cd /var	-> ls --> cd log --> pwd
+
+cd /var/--(followed by hit double tab)--u will see all the list of directories(ending by /).
+
+cd var/l followed by double tab. -- list all the things that are started by l.
+
+cd - --> it will takes u to the previous directory.
+
+$mkdir demo
+cd demo --> relative path
+pwd
+one directory before means--> cd ..
+cd ~ -->home directory
+
+in linux .(dot denotes present working directory) ..(denotes parent directory)
+
+================================================================
+directories:
+create:mkdir
+remove:
+rename:mv sample1 sample2
+copy:cp sample1 sample2
+
+
+cp file fileexist,filedoesnt exists
+	overwrite, copy with the same name. if its a directory it will place inside the directory.
+
+cp sample2 demo1/samplex
+copies in samplex.
+
+in linux if u remove a file u can't retreive.
+
+
+mv file fileexist,filedoesnt exists
+	overwrite, rename the file. if its a directory it will move inside the directory.
+
+
+===================================================================
+
+now editor part:
+
+linux is not a flavour of unix at all..most stupid statement.
+linux tornaldo -- came into picture -- with an intention of make an os.
+and they found unix is the best .. so rubust and secure.
+however the unix works the same the linux tornoldo written the linux.
+
+both are completely different.
+some people will feel that... unix has ls....and linux has same command.. he has written the same utility.
+
+======================================================================
+
+vi / vim 
+
+sudo vi /etc/sudoers --no colours
+sudo vim /etc/sudoers -- with colors..will grap attention and makes things easy write.
+
+it won't esc mode u need to understand. (down if it is insert then insert mode, if it is colon then colon mode)
+
+GNU
+
+linux to linux vi editor options will change.
+
+3 modes:
+
+ESC MODE:by default we will be in default mode
+
+INSERT MODE: by pressing i when we can go for insert mode .... if u want to back the press escape mode  
+COLON MODE:  by pressing : ---> it is used to (:/search,:/replace,save,save and quite)
+
+2 suitations:
+if file exists:it loads the file
+if file doesn't exists:it will create a new file
+
+==============================================================================
+
+cp /etc/passwd .
+vim passwd
+to search content-- esc -- :/nologin
+search & replace -- esc -- :%s/nologin/NOLOGIN/         %s/what u want to search/what u want to replace/   :2s/nologin/NOLOGIN/ --> only on the second line replace, % stands for all lines
+1-5s/nologin/NOLOGIN/ -- one to 5 lines.
+
+:/user ---first user replaced second user coundn't (it checks only first possibility) therefore use g at the end:%s/user/USER/g --replaces every word in the line.
+
+:/User/ --case sensitive ---- command :set ic  ----------- now case will go off
+disable the feature:set noic
+
+case insenstive
+:%s/user/USER/gi --i caseinsensitive
+save :wq!
+
+! --forcefully quite
+q!-- quite without saving any changes.
+
+==============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
